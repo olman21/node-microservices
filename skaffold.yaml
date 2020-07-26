@@ -7,6 +7,9 @@ deploy:
 build:
   local:
     push: false
+    useDockerCLI: true
+  insecureRegistries: 
+    - 127.0.0.1:2375
   artifacts:
     - image: olmanx21/post-client
       context: post-client
